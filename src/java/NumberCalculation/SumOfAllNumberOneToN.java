@@ -3,14 +3,8 @@ package NumberCalculation;
 public class SumOfAllNumberOneToN {
     public static void main(String [] args) {
         int sum = 0;
-        for (int i = 1; i <= 328; i++) {
-
-            if(i > 9){
-                   int rem =  segregateDigit(i);
-                   sum = sum + rem;
-            }else{
-                    sum = sum + i;
-            }
+        for (int i = 1; i <= 5; i++) {
+            sum = sum + segregateDigit(i);
         }
         System.out.println(sum);
     }
